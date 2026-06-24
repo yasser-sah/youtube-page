@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>YouTube Clone</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button class="menu-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="youtube-brand">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+            alt="YouTube"
+            class="youtube-logo"
+          />
+
+          <span>YouTube</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-regular fa-compass"></i>
+          <span>Explore</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Shorts</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-photo-film"></i>
+          <span>Subscriptions</span>
+        </a>
+      </nav>
+
+      <hr />
+
+      <nav class="sidebar-menu">
+        <a href="#" class="menu-item">
+          <i class="fa-regular fa-folder"></i>
+          <span>Library</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span>History</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-regular fa-circle-play"></i>
+          <span>Your Videos</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-regular fa-clock"></i>
+          <span>Watch Later</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="fa-regular fa-thumbs-up"></i>
+          <span>Liked Videos</span>
+        </a>
+      </nav>
+
+      <hr />
+
+      <h3 class="section-title">SUBSCRIPTIONS</h3>
+
+      <nav class="sidebar-menu">
+        <a href="#" class="subscription-item">
+          <div class="subscription-info">
+            <img src="https://i.pravatar.cc/24?img=1" />
+            <span>Nadir On The Go</span>
+          </div>
+          <div class="notification-dot"></div>
+        </a>
+
+        <a href="#" class="subscription-item">
+          <div class="subscription-info">
+            <img src="https://i.pravatar.cc/24?img=2" />
+            <span>Coke Studio </span>
+          </div>
+          <div class="notification-dot"></div>
+        </a>
+
+        <a href="#" class="subscription-item">
+          <div class="subscription-info">
+            <img src="https://i.pravatar.cc/24?img=3" />
+            <span>MKBHD</span>
+          </div>
+          <div class="notification-dot"></div>
+        </a>
+
+        <a href="#" class="subscription-item">
+          <div class="subscription-info">
+            <img src="https://i.pravatar.cc/24?img=4" />
+            <span>Figma</span>
+          </div>
+          <div class="notification-dot"></div>
+        </a>
+
+        <a href="#" class="subscription-item">
+          <div class="subscription-info">
+            <img src="https://i.pravatar.cc/24?img=5" />
+            <span>ATC Android</span>
+          </div>
+          <div class="notification-dot"></div>
+        </a>
+      </nav>
+    </aside>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("closed");
+      }
+    </script>
+  </body>
+</html>
