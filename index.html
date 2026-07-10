@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>YouTube sidebar</title>
+    <title>Youtube clone</title>
 
     <link
       rel="stylesheet"
@@ -15,8 +14,8 @@
   </head>
 
   <body>
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header">
+    <header class="topbar">
+      <div class="topbar-left">
         <button class="menu-btn" onclick="toggleSidebar()">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -24,14 +23,48 @@
         <div class="youtube-brand">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
-            alt="YouTube"
             class="youtube-logo"
+            alt="YouTube"
           />
 
           <span>YouTube</span>
         </div>
       </div>
 
+      <div class="topbar-center">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+
+          <button class="clear-search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="mic-btn">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+      </div>
+
+      <div class="topbar-right">
+        <button class="icon-btn">
+          <i class="fa-solid fa-video"></i>
+        </button>
+
+        <button class="icon-btn notification">
+          <i class="fa-regular fa-bell"></i>
+
+          <span class="badge">3</span>
+        </button>
+
+        <div class="profile-picture"></div>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
       <nav class="sidebar-menu">
         <a href="#" class="menu-item">
           <i class="fa-solid fa-house"></i>
@@ -87,48 +120,73 @@
 
       <h3 class="section-title">SUBSCRIPTIONS</h3>
 
-      <nav class="sidebar-menu">
-        <a href="#" class="subscription-item">
-          <div class="subscription-info">
-            <img src="https://i.pravatar.cc/24?img=1" />
-            <span>Nadir On The Go</span>
-          </div>
-          <div class="notification-dot"></div>
-        </a>
+      <a href="#" class="subscription-item">
+  <div class="subscription-info">
+    <div class="channel-picture"></div>
+    <span>Nadir On The Go</span>
+  </div>
+  <div class="notification-dot"></div>
+</a>
 
-        <a href="#" class="subscription-item">
-          <div class="subscription-info">
-            <img src="https://i.pravatar.cc/24?img=2" />
-            <span>Coke Studio </span>
-          </div>
-          <div class="notification-dot"></div>
-        </a>
+<a href="#" class="subscription-item">
+  <div class="subscription-info">
+    <div class="channel-picture"></div>
+    <span>coke studio</span>
+  </div>
+  <div class="notification-dot"></div>
+</a>
+ <a href="#" class="subscription-item">
+  <div class="subscription-info">
+    <div class="channel-picture"></div>
+    <span>MKBHD</span>
+  </div>
+  <div class="notification-dot"></div>
+</a>
+    
 
-        <a href="#" class="subscription-item">
-          <div class="subscription-info">
-            <img src="https://i.pravatar.cc/24?img=3" />
-            <span>MKBHD</span>
-          </div>
-          <div class="notification-dot"></div>
-        </a>
+       <a href="#" class="subscription-item">
+  <div class="subscription-info">
+    <div class="channel-picture"></div>
+    <span>Figma</span>
+  </div>
+  <div class="notification-dot"></div>
+</a>
 
-        <a href="#" class="subscription-item">
-          <div class="subscription-info">
-            <img src="https://i.pravatar.cc/24?img=4" />
-            <span>Figma</span>
-          </div>
-          <div class="notification-dot"></div>
-        </a>
-
-        <a href="#" class="subscription-item">
-          <div class="subscription-info">
-            <img src="https://i.pravatar.cc/24?img=5" />
-            <span>ATC Android</span>
-          </div>
-          <div class="notification-dot"></div>
-        </a>
+<a href="#" class="subscription-item">
+  <div class="subscription-info">
+    <div class="channel-picture"></div>
+    <span>ATC Android</span>
+  </div>
+  <div class="notification-dot"></div>
+</a>
       </nav>
     </aside>
+
+    <main class="content"></main>
+  <div class="category-container">
+
+    <div class="category-bar">
+
+        <button class="category">All</button>
+        <button class="category">Cook Studio</button>
+        <button class="category">UX</button>
+        <button class="category">Case Study</button>
+        <button class="category">Music</button>
+        <button class="category">Bangla Lofi</button>
+        <button class="category">Tour</button>
+        <button class="category">Saintmartin</button>
+        <button class="category">Tech</button>
+        <button class="category">iPhone 13</button>
+        <button class="category">User Interface Design</button>
+        <button class="category">Computer</button>
+
+    </div>
+
+    <button class="scroll-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
 
     <script>
       function toggleSidebar() {
