@@ -270,35 +270,23 @@ hr {
 }
 .category-container {
   position: fixed;
-
   top: 56px;
   left: 230px;
   right: 0;
-
   height: 56px;
-
   display: flex;
   align-items: center;
-
   background: #0f0f0f;
-
   border-bottom: 1px solid #303030;
-
   padding: 0 24px;
-
   z-index: 999;
 }
 .category-bar {
   display: flex;
-
   gap: 12px;
-
   overflow-x: auto;
-
   flex: 1;
-
   scrollbar-width: none;
-
   white-space: nowrap;
 }
 
@@ -307,41 +295,27 @@ hr {
 }
 .category {
   height: 32px;
-
   padding: 0 14px;
-
   border: none;
-
   border-radius: 8px;
-
   background: #272727;
-
   color: white;
-
   font-size: 14px;
-
   cursor: pointer;
-
   flex-shrink: 0;
 }
 .category:hover {
-    background: white;
-    color: black;
-} 
+  background: white;
+  color: black;
+}
 .scroll-btn {
   width: 36px;
   height: 36px;
-
   margin-left: 12px;
-
   border: none;
-
   border-radius: 50%;
-
   background: #0f0f0f;
-
   color: white;
-
   cursor: pointer;
 }
 
@@ -350,8 +324,6 @@ hr {
 }
 .content {
   margin-top: 112px;
-
   margin-left: 230px;
-
   padding: 25px;
 }
